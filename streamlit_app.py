@@ -1,13 +1,13 @@
 import streamlit as st
 
 pages = {
-    "Your account": [
-        st.Page("streamlit_app.py", title="Create your account"),
-        st.Page("pages/test3.py", title="Manage your account"),
+    "Data Upload": [
+        st.Page("streamlit_app.py", title="🎯 Closer Targets"),
+        st.Page("pages/test3.py", title="🌇 Markets"),
     ],
-    "Resources": [
-        st.Page("pages/test.py", title="Learn about us"),
-        st.Page("pages/test2.py", title="Try it out"),
+    "Appointments": [
+        st.Page("pages/test.py", title="🌐 Web"),
+        st.Page("pages/test2.py", title="🚪 Field"),
     ],
 }
 
