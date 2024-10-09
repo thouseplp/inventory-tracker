@@ -1,5 +1,19 @@
 import streamlit as st
 
+# Inject custom CSS for the header
+st.markdown(
+    """
+    <style>
+    header.st-emotion-cache-1qv137k.eczjsme2 {
+        margin-bottom: 30px;  /* Adjust this for more spacing */
+        padding-top: 20px;  /* Adjust this for more top padding */
+    }
+    </style>
+    """,
+    unsafe_allow_html=True,
+)
+
+# Your original pages dictionary
 pages = {
     "Data Upload": [
         st.Page("streamlit_app.py", title="🎯 Closer Targets"),
@@ -11,5 +25,6 @@ pages = {
     ],
 }
 
+# Create navigation
 pg = st.navigation(pages)
 pg.run()
