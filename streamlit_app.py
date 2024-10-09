@@ -6,6 +6,7 @@ st.markdown(
     <style>
     header.st-emotion-cache-1qv137k.eczjsme2 {
         padding-top: 20px;  /* Adjust this for more top padding */
+        font-size: 30px;  /* Adjust the size of the header text */
     }
     </style>
     """,
