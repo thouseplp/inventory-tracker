@@ -14,8 +14,8 @@ st.markdown(hide_expander_border, unsafe_allow_html=True)
 
 custom_css = """
     <style>
-    [data-testid="stExpander"] details {
-        font-size: 4rem !important;
+    [data-testid="stExpander"] details summary {
+        font-size: 20rem !important;
     }
     </style>
 """
@@ -26,4 +26,4 @@ st.markdown(custom_css, unsafe_allow_html=True)
 # Example of expander with larger label text
 with st.sidebar:
     with st.expander("Larger Label Text", expanded=True):
-        st.write("      This expander label is larger.")
+        st.write("This expander label is larger.")
